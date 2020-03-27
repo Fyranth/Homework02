@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Анкета</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="./css/style.css">
+        <base target="_blank">
+    </head>
+    <body>
+        <div id="header"></div>
+        <div id="main_body">
+            <div id="d_m_m">
+            <ul id="main_menu">
+                <li class="menu_tab">
+                    <a class="main_menu_a" href="./index.html"><span class="main_menu_link_text">Главная</span></a>
+                </li>
+                <li class="menu_tab">
+                    <a class="main_menu_a" href="./anketa.html"  target="_blanc"><span class="main_menu_link_text">Заполнить анкету</span></a>
+                </li>
+                <li class="menu_tab">
+                    <a class="main_menu_a" href="./addarticle.html" target="_blanc"><span class="main_menu_link_text">Добавить запись</span></a>
+                </li>
+                <li class="menu_tab">
+                    <a class="main_menu_a" href="./signin.html" target="_blanc"><span class="main_menu_link_text">Войти</span></a>
+                </li>
+                <li class="menu_tab">
+                    <a class="main_menu_a" href="./registration.html" target="_blanc"><span class="main_menu_link_text">Зарегистрироваться</span></a>
+                </li>
+            </ul>
+            </div>
+            <div id="anketa_block">
+                <form id="anketa">
+                    <fieldset >
+                        <legend>Заполните следующие поля (обязательная информация)</legend>
+                        <div class="anketa">
+                            <div class="anketa_input">
+                                <div class="input_fio">
+                                    <label for="Surname">Фамилия:</label>
+                                    <input type="text" id="Surname" required  class="input">
+                                </div>
+                                <div class="input_fio">
+                                    <label for="name">Имя:</label>
+                                    <input type="text" id="name" required  class="input">
+                                </div>
+                                <div class="input_fio">
+                                    <label for="middle_name">Отчетство:</label>
+                                    <input type="text" id="middle_name" required  class="input">
+                                </div>    
+                            </div>
+                            <div class="anketa_input">
+                                <label for="legion">Выберите клуб</label>
+                                <select id="legion" class="input">
+                                    <option >501'st legion</option>
+                                    <option>Rebel legion</option>
+                                    <option>Mandalorian merc's club</option>   
+                                </select>
+                            </div>
+                            <div class="anketa_input">
+                                <label for="city">Город:</label>
+                                <input type="text" id="city" required  class="input">
+                            </div>
+                            <div class="anketa_input">
+                                <label for="country">Страна:</label>
+                                <input type="text" id="country" required  class="input">
+                            </div>
+                            <div class="anketa_input">
+                                <label for="nickname">Позывной:</label>
+                                <input type="text" id="nickname" required  class="input">
+                            </div>
+                            <div class="anketa_input">
+                                <label for="costume">Костюм:</label>
+                                <input type="text" id="costume" required class="input">
+                            </div>
+                            <div class="anketa_input">
+                                <label for="email">Адрес эл.почты:</label>
+                                <input type="text" id="email" required class="input">
+                            </div>
+                            <div class="anketa_input">
+                                <label for="phone">Телефон:</label>
+                                <input type="text" id="phone" required class="input">
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Заполните следующие поля (необязательная информация)</legend>
+                        <div class="anketa_input">
+                            <label for="favorite_character">Любимый персонаж вселенной:</label>
+                            <input type="text" id="favorite_character" class="input">
+                        </div>
+                        <div class="anketa_input">
+                            <label for="favorite_episode">Любимый эпизод:</label>
+                            <select id="favorite_episode" class="input">
+                                <optgroup label="Приквелы">
+                                    <option>1й эпизод. "Призрачная угроза"</option>
+                                    <option>2й эпизод. "Атака клонов"</option>
+                                    <option>3й эпизод. "Месть ситхов"</option>   
+                                </optgroup>
+                                <optgroup label="Оригинальная трилогия">
+                                    <option>4й эпизод. "Новая надежда"</option>
+                                    <option>5й эпизод. "Империя наносит ответный удар"</option>
+                                    <option>6й эпизод. "Возвращение джедая"</option>   
+                                </optgroup>
+                                <optgroup label="Новая трилогия">
+                                    <option>7й эпизод. "Пробуждение силы"</option>
+                                    <option>8й эпизод. "Последние джедаи"</option>
+                                    <option>9й эпизод. "Скайвокер. Восход."</option>   
+                                </optgroup>        
+                            </select>
+                        </div>
+                    </fieldset>
+                    <div class="button">
+                        <button>Сохранить</button>
+                    </div>
+                </form>    
+            </div>
+        </div>
+        <div id="bottom">
+            
+        </div>
+    </body>
+</html>
